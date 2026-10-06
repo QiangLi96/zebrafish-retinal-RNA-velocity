@@ -35,3 +35,6 @@ To reproduce the stabilized vector-field reconstruction used in this study, the 
 
 ```text
 dynamo/vectorfield/scVectorField.py
+
+in the installed `dynamo-release` package should be replaced with the modified version provided in this repository:
+`scVectorField.py`
