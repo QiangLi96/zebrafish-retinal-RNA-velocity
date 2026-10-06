@@ -80,13 +80,6 @@ To reproduce the analyses:
 6. Run `H44DL1208pres_data_process_1.py` if regeneration of the processed dataset is required.
 7. Run the corresponding analysis scripts for vector-field reconstruction, fixed-point analysis, Jacobian analysis, least action paths, gene-velocity synchronization, and perturbation analysis.
 
-## Methodological overview
-
-The vector-field reconstruction is based on RNA-velocity estimates derived from single-cell transcriptomic data. A continuous and differentiable vector field is reconstructed in gene-expression state space using an RKHS-based formulation.
-
-To address numerical instability caused by the ill-conditioned kernel coefficient system, singular value decomposition (SVD)-based regularization is introduced during coefficient estimation. The stabilized vector field is subsequently used to characterize developmental trajectories, fixed points, attractor states, local Jacobians, least action paths, and perturbation responses.
-
-
 ## Citation
 
 If you use the code, data-processing workflow, or modified vector-field implementation provided in this repository, please cite the associated study:
