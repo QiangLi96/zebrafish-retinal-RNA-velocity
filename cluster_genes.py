@@ -135,8 +135,8 @@ class ClusterGenes():
         """
         import seaborn as sns
         heatmap_kwargs = {'xticklabels': True, 'yticklabels': 1, 'row_colors': None, 'col_colors': None, 'row_linkage': None, 'col_linkage': None, 'method': 'average', 'metric': 'euclidean', 'z_score': None, 'standard_scale': None}
-        sns_heatmap = sns.clustermap(data,row_cluster=row_cluster,col_cluster=col_cluster,cmap=color_map,figsize=(10,10),center=0,**heatmap_kwargs)
-        sns_heatmap.fig.suptitle('cluster key is "'+cluster_key+'", method is "'+methods+'"',fontsize=12)
+        sns_heatmap = sns.clustermap(data,row_cluster=row_cluster,col_cluster=col_cluster,cmap=color_map,figsize=(6.4,4.8),center=0,**heatmap_kwargs)
+        # sns_heatmap.fig.suptitle('cluster key is "'+cluster_key+'", method is "'+methods+'"',fontsize=15)
         # sns_heatmap.ax_row_dendrogram.set_visible(False) #suppress row dendrogram
         # sns_heatmap.ax_col_dendrogram.set_visible(False) #suppress column dendrogram
         if save_fig:
